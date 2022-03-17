@@ -22,11 +22,7 @@ const Header = () => {
           </div>
           <div className="header__right">
             <div className="header__right-image">
-              <Image
-                src="/header.svg"
-                width={1000}
-                height={1000}
-              />
+              <Image src="/assests/header.svg" width={500} height={500} />
             </div>
           </div>
         </div>
