@@ -1,0 +1,83 @@
+@import './Navbar';
+@import './Variables';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html {
+  a {
+    color: inherit;
+    text-decoration: none;
+    color: $WhiteColor;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    color: $WhiteColor;
+    background-color: $Color-bg;
+  }
+}
+.container {
+  width: $Container-width-lg;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 6rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.btn {
+  display: inline-block;
+  background: $WhiteColor;
+  color: $BlackColor;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: $Transition;
+  &:hover {
+    background: transparent;
+    color: $WhiteColor;
+    border-color: $WhiteColor;
+  }
+}
+.btn-primary{
+  background: $DangerColor;
+  color: $WhiteColor;
+}
