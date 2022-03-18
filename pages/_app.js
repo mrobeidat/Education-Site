@@ -1,14 +1,11 @@
-import Header from "../Components/Header";
-import Main from "../Components/Main";
+import Navbar from "../Components/Navbar";
 
-import "../styles/global.scss"
+import "../styles/global.scss";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Header/>
-      <Main/>
+      <Navbar />
       <Component {...pageProps} />
-   
     </>
   );
 }

@@ -1,11 +1,32 @@
-import Head from 'next/head'
-import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
+import React from "react";
+import * as Unicons from "@iconscout/react-unicons";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
- <>
- 
- </>
-  )
+    <>
+      <header>
+        <div className="container header__container">
+          <div className="header__left">
+            <h1>Grow your skills to andvance your career path</h1>
+            <p>
+              Sunt culpa ad reprehenderit do dolore culpa sit labore dolor ipsum
+              aute dolor est. Magna dolore esse exercitation enim minim fugiat
+              nisi elit nisi. Sit mollit nostrud cupidatat fugiat ipsum officia
+              dolor proident in ea elit cillum.
+            </p>
+            <Link href="/Courses">
+              <a className="btn btn-primary">Get Started</a>
+            </Link>
+          </div>
+          <div className="header__right">
+            <div className="header__right-image">
+              <Image src="/assests/header.svg" width={500} height={500} />
+            </div>
+          </div>
+        </div>
+      </header>
+    </>
+  );
 }
