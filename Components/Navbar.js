@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import * as Unicons from "@iconscout/react-unicons";
-const Header = () => {
+const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const onScroll = () => {
+    if (window.scrollY >= 50) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+  });
+
   return (
     <>
-      <nav>
+      <nav className={navbar ? "navbar active" : "navbar"}>
         <div class="container nav__container">
           <a href="/">
             <h4>Egator</h4>
@@ -34,4 +47,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

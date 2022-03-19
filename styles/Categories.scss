@@ -1,0 +1,64 @@
+.categories {
+  background: $Color-bg1;
+  height: 29rem;
+
+  .categories__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    // gap: 4rem;
+    padding: 5rem 0rem;
+
+    h1 {
+      line-height: 1;
+      margin-bottom: 3rem;
+    }
+    .categories__left {
+      margin-right: 4rem;
+    }
+    .categories__left p {
+      margin: 1rem 0 3rem;
+    }
+    .categories__right {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+  }
+
+  .category {
+    background: $Color-bg2;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: $Transition;
+
+    &:hover {
+      box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    h5 {
+      margin: 2rem 0 1rem;
+    }
+    p {
+      font-size: 0.85rem;
+    }
+    .category__icon {
+      background: $PrimaryColor;
+      padding: 1.2rem 0.7rem 0.6rem 0.7rem;
+      border-radius: 1rem;
+    }
+
+    &:nth-child(2) .category__icon {
+      background: $DangerColor;
+    }
+    &:nth-child(3) .category__icon {
+      background: $SuccessColor;
+    }
+    &:nth-child(4) .category__icon {
+      background: $WarningColor;
+    }
+    &:nth-child(5) .category__icon {
+      background: $SuccessColor;
+    }
+  }
+}

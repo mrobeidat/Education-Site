@@ -11,6 +11,10 @@ nav {
   .btn {
     display: none;
   }
+  &.active{
+    background: $PrimaryColor;
+    transition: $Transition;
+  }
 }
 .nav__container {
   height: 100%;
@@ -31,4 +35,5 @@ nav {
       color: $Color-bg2;
     }
   }
+  
 }
