@@ -645,8 +645,8 @@ export default function Home() {
         <h2>Students Testimonials</h2>
         <div>
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
+            slidesPerView="3"
+            spaceBetween={15}
             pagination={{
               clickable: true,
             }}
