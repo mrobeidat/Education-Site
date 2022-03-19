@@ -19,7 +19,7 @@ const Navbar = () => {
       <nav className={navbar ? "navbar active" : "navbar"}>
         <div class="container nav__container">
           <a href="/">
-            <h4>Egator</h4>
+            <h4>Educator</h4>
           </a>
           <ul className="nav__menu">
             <li>

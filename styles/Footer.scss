@@ -1,0 +1,47 @@
+footer {
+  background: $Color-bg1;
+  padding-top: 4rem;
+  font-size: 0.9rem;
+  line-height: 2rem;
+
+  ul {
+    li {
+      margin-bottom: 0.7rem;
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+
+    .footer__container > div h4 {
+      margin-bottom: 1.2rem;
+    }
+
+    .footer__1 {
+      p {
+        margin: 0 0 2rem;
+      }
+    }
+  }
+
+  .footer__socials {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+  }
+  
+}
+.footer__copyright{
+    text-align: center;
+    padding:1.2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid $Color-bg2;
+}

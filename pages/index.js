@@ -2,29 +2,24 @@ import React, { useEffect, useState } from "react";
 import * as Unicons from "@iconscout/react-unicons";
 import Link from "next/link";
 import Image from "next/image";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "aos/dist/aos.css";
-
 import { Pagination } from "swiper";
 import aos from "aos";
 
 export default function Home() {
   useEffect(() => {
-    aos.init({ duration: 2000 });
+    aos.init({
+      disable: false,
+      duration: 2000,
+    });
 
     const faqs = document.querySelectorAll(".faq");
     faqs.forEach((faq) => {
       faq.addEventListener("click", () => {
         faq.classList.toggle("open");
-
-        const icon = faq.querySelector(".faq__icon");
-        if (icon.className === "uil uil-plus") {
-          icon.className === "uil uil-minus";
-        }
       });
     });
   }, []);
@@ -33,16 +28,17 @@ export default function Home() {
     <>
       <header>
         <div className="container header__container">
-          <div 
-             data-aos="slide-right"
-             data-aos-offset="200"
-             data-aos-delay="50"
-             data-aos-duration="1000"
-             data-aos-easing="ease-in-out"
-             data-aos-mirror="true"
-             data-aos-once="true"
-             data-aos-anchor-placement="top-center"
-          className="header__left">
+          <div
+            data-aos="slide-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="header__left"
+          >
             <h1>Grow your skills to andvance your career path</h1>
             <p>
               Sunt culpa ad reprehenderit do dolore culpa sit labore dolor ipsum
@@ -55,15 +51,16 @@ export default function Home() {
             </Link>
           </div>
           <div
-          data-aos="slide-left"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-          className="header__right">
+            data-aos="slide-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="header__right"
+          >
             <div className="header__right-image">
               <Image src="/assests/header.svg" width={450} height={300} />
             </div>
@@ -75,15 +72,16 @@ export default function Home() {
       <section className="categories">
         <div className="container categories__container">
           <div
-             data-aos="fade-zoom-in"
-             data-aos-offset="50"
-             data-aos-delay="50"
-             data-aos-duration="1000"
-             data-aos-easing="ease-in-out"
-             data-aos-mirror="true"
-             data-aos-once="true"
-             data-aos-anchor-placement="top-center"
-          className="categories__left">
+            data-aos="fade-zoom-in"
+            data-aos-offset="10"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="categories__left"
+          >
             <h1>Categories</h1>
             <p>
               Sunt culpa ad reprehenderit do dolore culpa sit labore dolor ipsum
@@ -99,17 +97,28 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="categories__right">
-            <article
+          <div
             data-aos="fade-down"
-            data-aos-offset="50"
+            data-aos-offset="10"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
-            className="category">
+            data-aos-anchor-placement="top"
+            className="categories__right"
+          >
+            <article
+              data-aos="fade-down"
+              data-aos-offset="10"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+              className="category"
+            >
               <span className="category__icon">
                 <Unicons.UilBitcoinSign />
               </span>
@@ -120,15 +129,16 @@ export default function Home() {
             </article>
 
             <article
-            data-aos="fade-down"
-            data-aos-offset="50"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top-center"
-            className="category">
+              data-aos="fade-down"
+              data-aos-offset="10"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+              className="category"
+            >
               <span className="category__icon">
                 <Unicons.UilPalette />
               </span>
@@ -139,15 +149,16 @@ export default function Home() {
             </article>
 
             <article
-            data-aos="fade-down"
-            data-aos-offset="50"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top-center"
-            className="category">
+              data-aos="fade-down"
+              data-aos-offset="10"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+              className="category"
+            >
               <span className="category__icon">
                 <Unicons.UilDollarSignAlt />
               </span>
@@ -158,15 +169,16 @@ export default function Home() {
             </article>
 
             <article
-            data-aos="fade-down"
-            data-aos-offset="50"
-            data-aos-delay="700"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top-center"
-            className="category">
+              data-aos="fade-down"
+              data-aos-offset="10"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+              className="category"
+            >
               <span className="category__icon">
                 <Unicons.UilBitcoinCircle />
               </span>
@@ -177,15 +189,16 @@ export default function Home() {
             </article>
 
             <article
-            data-aos="fade-down"
-            data-aos-offset="50"
-            data-aos-delay="900"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top-center"
-            className="category">
+              data-aos="fade-down"
+              data-aos-offset="10"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+              className="category"
+            >
               <span className="category__icon">
                 <Unicons.UilMusic />
               </span>
@@ -196,15 +209,16 @@ export default function Home() {
             </article>
 
             <article
-            data-aos="fade-down"
-            data-aos-offset="50"
-            data-aos-delay="900"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="true"
-            data-aos-anchor-placement="top-center"
-            className="category">
+              data-aos="fade-down"
+              data-aos-offset="10"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+              className="category"
+            >
               <span className="category__icon">
                 <Unicons.UilPuzzlePiece />
               </span>
@@ -222,15 +236,16 @@ export default function Home() {
         <h2>Our Popular Courses</h2>
         <div className="container courses__container">
           <article
-          data-aos="fade-down"
-          data-aos-offset="50"
-          data-aos-delay="100"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-          className="course">
+            data-aos="fade-down"
+            data-aos-offset="50"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="course"
+          >
             <div className="course__image">
               <Image src="/assests/course1.jpg" width={450} height={300} />
             </div>
@@ -250,15 +265,16 @@ export default function Home() {
           </article>
 
           <article
-          data-aos="fade-down"
-          data-aos-offset="50"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-          className="course">
+            data-aos="fade-down"
+            data-aos-offset="50"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="course"
+          >
             <div className="course__image">
               <Image src="/assests/course2.jpg" width={450} height={300} />
             </div>
@@ -278,15 +294,16 @@ export default function Home() {
           </article>
 
           <article
-          data-aos="fade-down"
-          data-aos-offset="50"
-          data-aos-delay="500"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
-          data-aos-anchor-placement="top-center"
-          className="course">
+            data-aos="fade-down"
+            data-aos-offset="50"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="course"
+          >
             <div className="course__image">
               <Image src="/assests/course3.jpg" width={450} height={300} />
             </div>
@@ -311,17 +328,27 @@ export default function Home() {
       <section
         data-aos="fade-up"
         data-aos-offset="200"
-        data-aos-delay="50"
+        data-aos-delay="0"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
         data-aos-once="true"
-        data-aos-anchor-placement="top-center"
+        data-aos-anchor-placement="top"
         className="faqs"
       >
         <h2>Frequently Asked Questions</h2>
         <div className="container faqs__container">
-          <article className="faq open">
+          <article
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="faq open"
+          >
             <div className="faq__icon">
               <Unicons.UilPlus className="uil uil-plus" />
             </div>
@@ -340,7 +367,16 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="faq">
+          <article 
+           data-aos="fade-up"
+           data-aos-offset="200"
+           data-aos-delay="0"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out"
+           data-aos-mirror="true"
+           data-aos-once="true"
+           data-aos-anchor-placement="top"
+          className="faq">
             <div className="faq__icon">
               <Unicons.UilPlus />
             </div>
@@ -359,7 +395,17 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="faq">
+          <article
+             data-aos="fade-up"
+             data-aos-offset="200"
+             data-aos-delay="0"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+             data-aos-mirror="true"
+             data-aos-once="true"
+             data-aos-anchor-placement="top"
+            className="faq"
+          >
             <div className="faq__icon">
               <Unicons.UilPlus />
             </div>
@@ -378,7 +424,17 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="faq">
+          <article
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top"
+            className="faq"
+          >
             <div className="faq__icon">
               <Unicons.UilPlus />
             </div>
@@ -397,7 +453,17 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="faq">
+          <article
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="faq"
+          >
             <div className="faq__icon">
               <Unicons.UilPlus />
             </div>
@@ -416,7 +482,17 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="faq">
+          <article
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="faq"
+          >
             <div className="faq__icon">
               <Unicons.UilPlus />
             </div>
@@ -435,7 +511,17 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="faq">
+          <article
+           data-aos="fade-up"
+           data-aos-offset="200"
+           data-aos-delay="0"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out"
+           data-aos-mirror="true"
+           data-aos-once="true"
+           data-aos-anchor-placement="top"
+            className="faq"
+          >
             <div className="faq__icon">
               <Unicons.UilPlus />
             </div>
@@ -454,7 +540,17 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="faq">
+          <article
+           data-aos="fade-up"
+           data-aos-offset="200"
+           data-aos-delay="0"
+           data-aos-duration="1000"
+           data-aos-easing="ease-in-out"
+           data-aos-mirror="true"
+           data-aos-once="true"
+           data-aos-anchor-placement="top"
+            className="faq"
+          >
             <div className="faq__icon">
               <Unicons.UilPlus />
             </div>
@@ -473,7 +569,17 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="faq">
+          <article
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="faq"
+          >
             <div className="faq__icon">
               <Unicons.UilPlus />
             </div>
@@ -492,7 +598,17 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="faq">
+          <article
+             data-aos="fade-up"
+             data-aos-offset="200"
+             data-aos-delay="0"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+             data-aos-mirror="true"
+             data-aos-once="true"
+             data-aos-anchor-placement="top"
+            className="faq"
+          >
             <div className="faq__icon">
               <Unicons.UilPlus />
             </div>
@@ -516,15 +632,16 @@ export default function Home() {
       {/* Testimonials Section */}
 
       <section
-      data-aos="fade-up"
-      data-aos-offset="0"
-      data-aos-delay="100"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="true"
-      data-aos-anchor-placement="top-center"
-      className="container testimonials__container">
+         data-aos="fade-up"
+         data-aos-offset="200"
+         data-aos-delay="0"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
+         data-aos-mirror="true"
+         data-aos-once="true"
+         data-aos-anchor-placement="top"
+        className="container testimonials__container"
+      >
         <h2>Students' Testimonials</h2>
         <div>
           <Swiper
