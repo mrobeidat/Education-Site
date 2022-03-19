@@ -1,0 +1,69 @@
+.testimonials__container {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+  text-align: center;
+  padding: 5rem;
+
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+  }
+}
+
+.testimonial {
+  padding-top: 2rem;
+}
+
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1rem solid $Color-bg1;
+}
+
+.testimonial__info {
+  text-align: center;
+}
+.testimonial__body {
+  padding: 2rem;
+  background: $PrimaryColor;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.testimonial__body::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    $PrimaryColor,
+    $PrimaryColor,
+    $PrimaryColor
+  );
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 44%;
+  top: -1.5rem;
+  transform: rotate(45deg);
+}
+
+
+
+  
+  @media screen and (min-width: 640px) {
+    .mySwiper {
+      width: 640px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .mySwiper {
+      width: 768px;
+    }
+  }

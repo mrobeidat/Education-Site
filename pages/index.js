@@ -1,29 +1,48 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import * as Unicons from "@iconscout/react-unicons";
 import Link from "next/link";
 import Image from "next/image";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "aos/dist/aos.css";
+
+import { Pagination } from "swiper";
+import aos from "aos";
+
 export default function Home() {
   useEffect(() => {
-    const faqs = document.querySelectorAll('.faq');
- 
+    aos.init({ duration: 2000 });
+
+    const faqs = document.querySelectorAll(".faq");
     faqs.forEach((faq) => {
       faq.addEventListener("click", () => {
         faq.classList.toggle("open");
 
-        const icon = faq.querySelector('.faq__icon')
-        if(icon.className==='uil uil-plus'){
-          icon.className==='uil uil-minus'
+        const icon = faq.querySelector(".faq__icon");
+        if (icon.className === "uil uil-plus") {
+          icon.className === "uil uil-minus";
         }
       });
     });
-  });
+  }, []);
 
   return (
     <>
       <header>
         <div className="container header__container">
-          <div className="header__left">
+          <div 
+             data-aos="slide-right"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+             data-aos-mirror="true"
+             data-aos-once="true"
+             data-aos-anchor-placement="top-center"
+          className="header__left">
             <h1>Grow your skills to andvance your career path</h1>
             <p>
               Sunt culpa ad reprehenderit do dolore culpa sit labore dolor ipsum
@@ -35,7 +54,16 @@ export default function Home() {
               <a className="btn btn-primary">Get Started</a>
             </Link>
           </div>
-          <div className="header__right">
+          <div
+          data-aos="slide-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          className="header__right">
             <div className="header__right-image">
               <Image src="/assests/header.svg" width={450} height={300} />
             </div>
@@ -46,7 +74,16 @@ export default function Home() {
       {/* Categories Section */}
       <section className="categories">
         <div className="container categories__container">
-          <div className="categories__left">
+          <div
+             data-aos="fade-zoom-in"
+             data-aos-offset="50"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+             data-aos-mirror="true"
+             data-aos-once="true"
+             data-aos-anchor-placement="top-center"
+          className="categories__left">
             <h1>Categories</h1>
             <p>
               Sunt culpa ad reprehenderit do dolore culpa sit labore dolor ipsum
@@ -63,7 +100,16 @@ export default function Home() {
           </div>
 
           <div className="categories__right">
-            <article className="category">
+            <article
+            data-aos="fade-down"
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+            className="category">
               <span className="category__icon">
                 <Unicons.UilBitcoinSign />
               </span>
@@ -73,7 +119,16 @@ export default function Home() {
               </p>
             </article>
 
-            <article className="category">
+            <article
+            data-aos="fade-down"
+            data-aos-offset="50"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+            className="category">
               <span className="category__icon">
                 <Unicons.UilPalette />
               </span>
@@ -83,7 +138,16 @@ export default function Home() {
               </p>
             </article>
 
-            <article className="category">
+            <article
+            data-aos="fade-down"
+            data-aos-offset="50"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+            className="category">
               <span className="category__icon">
                 <Unicons.UilDollarSignAlt />
               </span>
@@ -93,7 +157,16 @@ export default function Home() {
               </p>
             </article>
 
-            <article className="category">
+            <article
+            data-aos="fade-down"
+            data-aos-offset="50"
+            data-aos-delay="700"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+            className="category">
               <span className="category__icon">
                 <Unicons.UilBitcoinCircle />
               </span>
@@ -103,7 +176,16 @@ export default function Home() {
               </p>
             </article>
 
-            <article className="category">
+            <article
+            data-aos="fade-down"
+            data-aos-offset="50"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+            className="category">
               <span className="category__icon">
                 <Unicons.UilMusic />
               </span>
@@ -113,7 +195,16 @@ export default function Home() {
               </p>
             </article>
 
-            <article className="category">
+            <article
+            data-aos="fade-down"
+            data-aos-offset="50"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+            className="category">
               <span className="category__icon">
                 <Unicons.UilPuzzlePiece />
               </span>
@@ -130,7 +221,16 @@ export default function Home() {
       <section className="courses">
         <h2>Our Popular Courses</h2>
         <div className="container courses__container">
-          <article className="course">
+          <article
+          data-aos="fade-down"
+          data-aos-offset="50"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          className="course">
             <div className="course__image">
               <Image src="/assests/course1.jpg" width={450} height={300} />
             </div>
@@ -148,7 +248,17 @@ export default function Home() {
               </a>
             </Link>
           </article>
-          <article className="course">
+
+          <article
+          data-aos="fade-down"
+          data-aos-offset="50"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          className="course">
             <div className="course__image">
               <Image src="/assests/course2.jpg" width={450} height={300} />
             </div>
@@ -166,7 +276,17 @@ export default function Home() {
               </a>
             </Link>
           </article>
-          <article className="course">
+
+          <article
+          data-aos="fade-down"
+          data-aos-offset="50"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          className="course">
             <div className="course__image">
               <Image src="/assests/course3.jpg" width={450} height={300} />
             </div>
@@ -188,12 +308,22 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="faqs">
+      <section
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+        className="faqs"
+      >
         <h2>Frequently Asked Questions</h2>
         <div className="container faqs__container">
           <article className="faq open">
             <div className="faq__icon">
-              <Unicons.UilPlus className='uil uil-plus'/>
+              <Unicons.UilPlus className="uil uil-plus" />
             </div>
             <div className="question__answer">
               <h4>How do i know the right courses for me?</h4>
@@ -380,6 +510,144 @@ export default function Home() {
               </p>
             </div>
           </article>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+
+      <section
+      data-aos="fade-up"
+      data-aos-offset="0"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="true"
+      data-aos-anchor-placement="top-center"
+      className="container testimonials__container">
+        <h2>Students' Testimonials</h2>
+        <div>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+            breakpoints={{
+              // when window width is >= 640px
+              640: {
+                width: 640,
+                slidesPerView: 1,
+              },
+              // when window width is >= 768px
+              768: {
+                width: 768,
+                slidesPerView: 2,
+              },
+            }}
+          >
+            <article className="testimonial">
+              <SwiperSlide>
+                <div className="avatar">
+                  <Image src="/assests/avatar1.jpg" width={450} height={450} />
+                </div>
+                <div className="testimonial">
+                  <h5>Diana Ayi</h5>
+                  <small>Student</small>
+                </div>
+                <div className="testimonial__body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta iure cupiditate commodi quas facilis dolores est quia
+                    consequuntur dolor voluptates labore, illum sequi officia
+                    quaerat velit tempore odit quasi fugit?
+                  </p>
+                </div>
+              </SwiperSlide>
+            </article>
+
+            <article className="testimonial">
+              <SwiperSlide>
+                <div className="avatar">
+                  <Image src="/assests/avatar2.jpg" width={450} height={450} />
+                </div>
+                <div className="testimonial">
+                  <h5>Ernest Achiever</h5>
+                  <small>Web Developer</small>
+                </div>
+                <div className="testimonial__body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta iure cupiditate commodi quas facilis dolores est quia
+                    consequuntur dolor voluptates labore, illum sequi officia
+                    quaerat velit tempore odit quasi fugit?
+                  </p>
+                </div>
+              </SwiperSlide>
+            </article>
+
+            <article className="testimonial">
+              <SwiperSlide>
+                <div className="avatar">
+                  <Image src="/assests/avatar3.jpg" width={450} height={450} />
+                </div>
+                <div className="testimonial">
+                  <h5>Edem Quist</h5>
+                  <small>Teacher</small>
+                </div>
+                <div className="testimonial__body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta iure cupiditate commodi quas facilis dolores est quia
+                    consequuntur dolor voluptates labore, illum sequi officia
+                    quaerat velit tempore odit quasi fugit?
+                  </p>
+                </div>
+              </SwiperSlide>
+            </article>
+
+            <article className="testimonial">
+              <SwiperSlide>
+                <div className="avatar">
+                  <Image src="/assests/avatar4.jpg" width={450} height={450} />
+                </div>
+                <div className="testimonial">
+                  <h5>Hajia Bintu</h5>
+                  <small>Doctor</small>
+                </div>
+                <div className="testimonial__body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta iure cupiditate commodi quas facilis dolores est quia
+                    consequuntur dolor voluptates labore, illum sequi officia
+                    quaerat velit tempore odit quasi fugit?
+                  </p>
+                </div>
+              </SwiperSlide>
+            </article>
+
+            <article className="testimonial">
+              <SwiperSlide>
+                <div className="avatar">
+                  <Image src="/assests/avatar5.jpg" width={450} height={450} />
+                </div>
+                <div className="testimonial">
+                  <h5>Jane Doe</h5>
+                  <small>physician</small>
+                </div>
+                <div className="testimonial__body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta iure cupiditate commodi quas facilis dolores est quia
+                    consequuntur dolor voluptates labore, illum sequi officia
+                    quaerat velit tempore odit quasi fugit?
+                  </p>
+                </div>
+              </SwiperSlide>
+            </article>
+          </Swiper>
         </div>
       </section>
     </>
