@@ -56,7 +56,7 @@ export default function Home() {
               enim minim fugiat nisi elit nisi.
             </p>
             <Link href="/Courses">
-              <a href="#" className="btn">
+              <a href="#" className="btn btn-primary">
                 Learn More
               </a>
             </Link>
