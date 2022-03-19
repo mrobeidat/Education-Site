@@ -1,6 +1,7 @@
 .courses {
   margin-top: 10rem;
   text-align: center;
+  
 
   h2 {
     margin-bottom: 3rem;
@@ -10,13 +11,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    
   }
   .course {
     background: $Color-bg1;
     text-align: center;
     border: 1px solid transparent;
     transition: $Transition;
+    // padding: 1.5rem;
 
+    .btn-primary{
+      margin-bottom: 3rem;
+    }
     &:hover {
       background: transparent;
       border-color: $PrimaryColor;

@@ -1,9 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import * as Unicons from "@iconscout/react-unicons";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
+  useEffect(() => {
+    const faqs = document.querySelectorAll('.faq');
+ 
+    faqs.forEach((faq) => {
+      faq.addEventListener("click", () => {
+        faq.classList.toggle("open");
+
+        const icon = faq.querySelector('.faq__icon')
+        if(icon.className==='uil uil-plus'){
+          icon.className==='uil uil-minus'
+        }
+      });
+    });
+  });
+
   return (
     <>
       <header>
@@ -168,6 +183,202 @@ export default function Home() {
                 Learn More
               </a>
             </Link>
+          </article>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div className="container faqs__container">
+          <article className="faq open">
+            <div className="faq__icon">
+              <Unicons.UilPlus className='uil uil-plus'/>
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
+          </article>
+
+          <article className="faq">
+            <div className="faq__icon">
+              <Unicons.UilPlus />
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
+          </article>
+
+          <article className="faq">
+            <div className="faq__icon">
+              <Unicons.UilPlus />
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
+          </article>
+
+          <article className="faq">
+            <div className="faq__icon">
+              <Unicons.UilPlus />
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
+          </article>
+
+          <article className="faq">
+            <div className="faq__icon">
+              <Unicons.UilPlus />
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
+          </article>
+
+          <article className="faq">
+            <div className="faq__icon">
+              <Unicons.UilPlus />
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
+          </article>
+
+          <article className="faq">
+            <div className="faq__icon">
+              <Unicons.UilPlus />
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
+          </article>
+
+          <article className="faq">
+            <div className="faq__icon">
+              <Unicons.UilPlus />
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
+          </article>
+
+          <article className="faq">
+            <div className="faq__icon">
+              <Unicons.UilPlus />
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
+          </article>
+
+          <article className="faq">
+            <div className="faq__icon">
+              <Unicons.UilPlus />
+            </div>
+            <div className="question__answer">
+              <h4>How do i know the right courses for me?</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur ipsam perferendis iure deserunt distinctio
+                optio impedit ex! Ab minus vero facere id deleniti. Assumenda, a
+                error iste necessitatibus modi saepe, id asperiores vitae
+                consectetur eius reiciendis accusamus omnis recusandae animi,
+                impedit blanditiis sed? Aliquid rerum asperiores repellat,
+                dignissimos blanditiis, enim, voluptatem tempore vitae
+                architecto ut odio. Dolorum, ea maiores?
+              </p>
+            </div>
           </article>
         </div>
       </section>
