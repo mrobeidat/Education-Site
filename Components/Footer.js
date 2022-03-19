@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__copyright">
-          <span>Copyright Yousef Obeidat</span>
+          <span>Copyright&copy;Yousef Obeidat</span>
         </div>
       </footer>
     </>

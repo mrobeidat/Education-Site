@@ -62,7 +62,7 @@ export default function Home() {
             className="header__right"
           >
             <div className="header__right-image">
-              <Image src="/assests/header.svg" width={450} height={300} />
+              <Image alt="img" src="/assests/header.svg" width={450} height={300} />
             </div>
           </div>
         </div>
@@ -247,7 +247,7 @@ export default function Home() {
             className="course"
           >
             <div className="course__image">
-              <Image src="/assests/course1.jpg" width={450} height={300} />
+              <Image alt="img" src="/assests/course1.jpg" width={450} height={300} />
             </div>
             <div className="course__info">
               <h4>Responsive Social Media Website UI Design</h4>
@@ -276,7 +276,7 @@ export default function Home() {
             className="course"
           >
             <div className="course__image">
-              <Image src="/assests/course2.jpg" width={450} height={300} />
+              <Image alt="img" src="/assests/course2.jpg" width={450} height={300} />
             </div>
             <div className="course__info">
               <h4>Responsive SmartHome Website Design</h4>
@@ -305,7 +305,7 @@ export default function Home() {
             className="course"
           >
             <div className="course__image">
-              <Image src="/assests/course3.jpg" width={450} height={300} />
+              <Image alt="img" src="/assests/course3.jpg" width={450} height={300} />
             </div>
             <div className="course__info">
               <h4>Responsive Admin Dashboard UI Design</h4>
@@ -642,7 +642,7 @@ export default function Home() {
          data-aos-anchor-placement="top"
         className="container testimonials__container"
       >
-        <h2>Students' Testimonials</h2>
+        <h2>Students Testimonials</h2>
         <div>
           <Swiper
             slidesPerView={3}
@@ -668,7 +668,7 @@ export default function Home() {
             <article className="testimonial">
               <SwiperSlide>
                 <div className="avatar">
-                  <Image src="/assests/avatar1.jpg" width={450} height={450} />
+                  <Image alt="img" src="/assests/avatar1.jpg" width={450} height={450} />
                 </div>
                 <div className="testimonial">
                   <h5>Diana Ayi</h5>
@@ -688,7 +688,7 @@ export default function Home() {
             <article className="testimonial">
               <SwiperSlide>
                 <div className="avatar">
-                  <Image src="/assests/avatar2.jpg" width={450} height={450} />
+                  <Image alt="img" src="/assests/avatar2.jpg" width={450} height={450} />
                 </div>
                 <div className="testimonial">
                   <h5>Ernest Achiever</h5>
@@ -708,7 +708,7 @@ export default function Home() {
             <article className="testimonial">
               <SwiperSlide>
                 <div className="avatar">
-                  <Image src="/assests/avatar3.jpg" width={450} height={450} />
+                  <Image alt="img" src="/assests/avatar3.jpg" width={450} height={450} />
                 </div>
                 <div className="testimonial">
                   <h5>Edem Quist</h5>
@@ -728,7 +728,7 @@ export default function Home() {
             <article className="testimonial">
               <SwiperSlide>
                 <div className="avatar">
-                  <Image src="/assests/avatar4.jpg" width={450} height={450} />
+                  <Image alt="img" src="/assests/avatar4.jpg" width={450} height={450} />
                 </div>
                 <div className="testimonial">
                   <h5>Hajia Bintu</h5>
@@ -748,7 +748,7 @@ export default function Home() {
             <article className="testimonial">
               <SwiperSlide>
                 <div className="avatar">
-                  <Image src="/assests/avatar5.jpg" width={450} height={450} />
+                  <Image alt="img" src="/assests/avatar5.jpg" width={450} height={450} />
                 </div>
                 <div className="testimonial">
                   <h5>Jane Doe</h5>
