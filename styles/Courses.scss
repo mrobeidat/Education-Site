@@ -1,0 +1,33 @@
+.courses {
+  margin-top: 10rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  .courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .course {
+    background: $Color-bg1;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: $Transition;
+
+    &:hover {
+      background: transparent;
+      border-color: $PrimaryColor;
+    }
+  }
+  .course__info {
+    padding: 2rem;
+
+    p {
+      margin: 1.2rem 0 2rem;
+      font-size: 0.9rem;
+    }
+  }
+}
