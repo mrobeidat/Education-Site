@@ -1,6 +1,17 @@
 import React, { useState, useEffect } from "react";
 import * as Unicons from "@iconscout/react-unicons";
+
+import "aos/dist/aos.css";
+import aos from "aos";
+
 const Navbar = () => {
+  useEffect(() => {
+    aos.init({
+      disable: false,
+      duration: 2000,
+    });
+  }, []);
+
   const [navbar, setNavbar] = useState(false);
 
   const onScroll = () => {
@@ -36,20 +47,66 @@ const Navbar = () => {
     <>
       <nav className={navbar ? "navbar active" : "navbar"}>
         <div class="container nav__container">
-          <a href="/">
+          <a
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            href="/"
+          >
             <h4>Educator</h4>
           </a>
           <ul className="nav__menu">
-            <li>
+            <li
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            >
               <a href="/">Home</a>
             </li>
-            <li>
+            <li
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            >
               <a href="/About">About</a>
             </li>
-            <li>
+            <li
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            >
               <a href="/Courses">Coures</a>
             </li>
-            <li>
+            <li
+              data-aos="fade-down"
+              data-aos-offset="200"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+            >
               <a href="/Contact">Contact</a>
             </li>
           </ul>

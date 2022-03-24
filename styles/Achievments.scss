@@ -1,0 +1,64 @@
+.about__achievements {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+
+  .about__achievements-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+
+    .about__achievements-right > p {
+      margin: 1.6rem 0 2.5rem;
+    }
+  }
+  .achievements__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+    .achievement__card {
+      background: $Color-bg1;
+      padding: 1.6rem;
+      border-radius: 1rem;
+      text-align: center;
+      transition: $Transition;
+
+      p {
+        margin-top: 1rem;
+      }
+
+      &:hover {
+        background: $Color-bg2;
+        box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+      }
+      .achievement__icon {
+        padding: 0.7rem;
+        border-radius: 1rem;
+        display: inline-block;
+        margin-bottom: 2rem;
+        font-size: 0.2rem;
+        background: $DangerColor;
+      }
+      &:nth-child(2) {
+        .achievement__icon {
+          padding: 0.7rem;
+          border-radius: 1rem;
+          display: inline-block;
+          margin-bottom: 2rem;
+          font-size: 0.2rem;
+          background: $SuccessColor;
+        }
+      }
+      &:nth-child(3) {
+        .achievement__icon {
+          padding: 0.7rem;
+          border-radius: 1rem;
+          display: inline-block;
+          margin-bottom: 2rem;
+          font-size: 0.2rem;
+          background: $PrimaryColor;
+        }
+      }
+    }
+  }
+}
