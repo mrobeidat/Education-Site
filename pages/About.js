@@ -25,9 +25,9 @@ const Header = () => {
         data-aos-mirror="true"
         data-aos-once="true"
         data-aos-anchor-placement="top"
-        class="about__achievements"
+        className="about__achievements"
       >
-        <div class="container about__achievements-container">
+        <div className="container about__achievements-container">
           <div
             data-aos="fade-down"
             data-aos-offset="200"
@@ -37,7 +37,7 @@ const Header = () => {
             data-aos-mirror="true"
             data-aos-once="true"
             data-aos-anchor-placement="top"
-            class="about__achievements-left"
+            className="about__achievements-left"
           >
             <Image
               src="/assests/about achievements.svg"
@@ -54,7 +54,7 @@ const Header = () => {
             data-aos-mirror="true"
             data-aos-once="true"
             data-aos-anchor-placement="top"
-            class="about__achievements-right"
+            className="about__achievements-right"
           >
             <h1>Achievements</h1>
             <p>
