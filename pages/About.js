@@ -63,7 +63,7 @@ const Header = () => {
               et libero similique aspernatur quos, minima illo suscipit ratione
               facere doloribus corrupti?
             </p>
-            <div class="achievements__cards">
+            <div className="achievements__cards">
               <article
                 data-aos="slide-up"
                 data-aos-delay="100"
