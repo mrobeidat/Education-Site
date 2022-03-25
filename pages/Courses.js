@@ -4,9 +4,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <>
-      <section
-      style={{marginBottom:"8rem"}}
-      className="courses">
+      <section style={{ marginBottom: "8rem" }} className="courses">
         <h2>Choose Your Desired Course</h2>
         <div className="container courses__container">
           <article
@@ -42,7 +40,6 @@ const Header = () => {
               </a>
             </Link>
           </article>
-
           <article
             data-aos="fade-down"
             data-aos-offset="50"
@@ -75,7 +72,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -107,7 +105,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -139,7 +138,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -171,7 +171,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -203,7 +204,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -235,7 +237,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -267,7 +270,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -299,7 +303,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -331,7 +336,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -363,7 +369,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -395,7 +402,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -427,7 +435,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -459,7 +468,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -491,7 +501,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -523,7 +534,8 @@ const Header = () => {
                 Learn More
               </a>
             </Link>
-          </article>  <article
+          </article>{" "}
+          <article
             data-aos="fade-down"
             data-aos-offset="50"
             data-aos-delay="100"
@@ -556,7 +568,6 @@ const Header = () => {
               </a>
             </Link>
           </article>
-
           <article
             data-aos="fade-down"
             data-aos-offset="50"
