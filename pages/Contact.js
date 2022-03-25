@@ -1,35 +1,100 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-// import "./ContactUs.css"
+import React from "react";
+import * as Unicons from "@iconscout/react-unicons";
+
 const ContactUs = () => {
-  // const form = useRef();
+  return (
+    <>
+      <section className="content">
+        <div className="container contact__container">
+          <aside className="contact__aside">
+            <div className="aside__image">
+              <img src="./assests/contact.svg" />
+            </div>
+            <h2>Contact Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
+              laboriosam.elit. Qui laboriosam.
+            </p>
+            <ul className="contact__details">
+              <li>
+                <Unicons.UilPhoneTimes />
+                <h5>+23215123121388</h5>
+              </li>
+              <li>
+                <Unicons.UilEnvelopes />
+                <h5>support@help.com</h5>
+              </li>
+              <li>
+                <Unicons.UilLocationPoint />
+                <h5>Accra, Ghana</h5>
+              </li>
+            </ul>
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+            <ul className="contact__socials">
+              <li>
+                <a href="https://facebook.com">
+                  <Unicons.UilFacebookF />
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a href="https://instagram.com">
+                  <Unicons.UilInstagram />
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a href="https://twitter.com">
+                  <Unicons.UilTwitter />
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a href="https://linkedin.com">
+                  <Unicons.UilLinkedinAlt />
+                </a>
+              </li>
+            </ul>
+          </aside>
 
-  //   emailjs
-  //     .sendForm("Gmail", "template_p9yzm1l", form.current, "-HVPUUlqkdJVzLFR8")
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  //   e.target.reset();
-  // };
-
-  return (<></>
-    // <form style={{ marginTop: "303em" }} ref={form} onSubmit={sendEmail}>
-    //   <label>Name</label>
-    //   <input type="text" name="user_name" />
-    //   <label>Email</label>
-    //   <input type="email" name="user_email" />
-    //   <label>Message</label>
-    //   <textarea name="message" />
-    //   <input type="submit" value="Send" />
-    // </form>
+          <form
+            action="https://formspree.io/f/mayvdnnr"
+            method="POST"
+            target="_blank"
+          >
+            <div className="form__name">
+              <input
+                type="text"
+                name="First Name"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                name="Last Name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <input
+              type="email"
+              name="Email Address"
+              placeholder="Your Email Address"
+            />
+            <textarea
+              name="Message"
+              rows="7"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </>
   );
 };
+
 export default ContactUs;
