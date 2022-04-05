@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import * as Unicons from "@iconscout/react-unicons";
-
+import aos from "aos";
+import "aos/dist/aos.css";
 const ContactUs = () => {
+  useEffect(() => {
+    aos.init({
+      disable: false,
+      duration: 2000,
+    });
+  });
   return (
     <>
-      <section className="content">
+      <section
+        data-aos="fade-down"
+        data-aos-offset="50"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top"
+        className="content"
+      >
         <div className="container contact__container">
-          <aside className="contact__aside">
+          <aside
+            data-aos="fade-right"
+            data-aos-offset="50"
+            data-aos-delay="320"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-anchor-placement="top"
+            className="contact__aside"
+          >
             <div className="aside__image">
               <img src="./assests/contact.svg" />
             </div>
@@ -64,12 +91,28 @@ const ContactUs = () => {
           >
             <div className="form__name">
               <input
+                data-aos="fade-right"
+                data-aos-offset="50"
+                data-aos-delay="150"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top"
                 type="text"
                 name="First Name"
                 placeholder="First Name"
                 required
               />
               <input
+                data-aos="fade-left"
+                data-aos-offset="50"
+                data-aos-delay="220"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top"
                 type="text"
                 name="Last Name"
                 placeholder="Last Name"
@@ -77,17 +120,44 @@ const ContactUs = () => {
               />
             </div>
             <input
+              data-aos="fade-right"
+              data-aos-offset="50"
+              data-aos-delay="320"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
               type="email"
               name="Email Address"
               placeholder="Your Email Address"
             />
             <textarea
+              data-aos="fade-left"
+              data-aos-offset="50"
+              data-aos-delay="450"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
               name="Message"
               rows="7"
               placeholder="Message"
               required
             ></textarea>
-            <button type="submit" className="btn btn-primary">
+            <button
+              data-aos="fade-up"
+              data-aos-offset="50"
+              data-aos-delay="470"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top"
+              type="submit"
+              className="btn btn-primary"
+            >
               Send Message
             </button>
           </form>
